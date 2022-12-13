@@ -41,6 +41,12 @@ return {
     end,
   },
 
+  ['VonHeikemen/fine-cmdline.nvim'] = {
+    requires = {
+      {'MunifTanjim/nui.nvim'}
+    }
+  }
+
   -- remove plugin
   -- ["hrsh7th/cmp-path"] = false,
 }
