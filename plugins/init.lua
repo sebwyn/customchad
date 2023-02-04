@@ -1,12 +1,11 @@
 local overrides = require "custom.plugins.overrides"
 
 return {
-
-  -- ["goolord/alpha-nvim"] = { disable = false } -- enables dashboard
-
   -- Override plugin definition options
   ["neovim/nvim-lspconfig"] = {
+    opt = false,
     config = function()
+      print("Loading my config")
       require "plugins.configs.lspconfig"
       require "custom.plugins.lspconfig"
     end,
@@ -40,13 +39,4 @@ return {
       require "custom.plugins.null-ls"
     end,
   },
-
-  ['VonHeikemen/fine-cmdline.nvim'] = {
-    requires = {
-      {'MunifTanjim/nui.nvim'}
-    }
-  }
-
-  -- remove plugin
-  -- ["hrsh7th/cmp-path"] = false,
 }

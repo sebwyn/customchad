@@ -9,7 +9,7 @@ M.disabled = {
 
 M.general = {
   n = {
-    ["<leader>;"] = { ":bp<CR>:bd #<CR>", "delete buffer", opts = { nowait = true } },
+    ["<leader>;"] = { ":bp<CR>:bd #<CR>", "close buffer", opts = { nowait = true } },
 
     ["<C-d>"] = { "<C-d>zz", "recenter when scrolling", opts = { nowait = true } },
     ["<C-u>"] = { "<C-u>zz", "recenter when scrolling", opts = { nowait = true } },
@@ -18,12 +18,6 @@ M.general = {
   v = {
     [">"] = { ">gv", "Indent mainting selection", opts = { nowait = true } },
     ["<"] = { "<gv", "Unindent mainting selection", opts = { nowait = true } },
-  },
-}
-
-M.fineline = {
-  n = {
-    ["<CR>"] = { ":FineCmdline<CR>", "opoen floating command line", opts = { nowait = true } },
   },
 }
 
